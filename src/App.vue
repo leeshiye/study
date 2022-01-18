@@ -18,6 +18,10 @@
         label="地址">
       </el-table-column>
     </el-table>
+
+    <!-- input输入框 -->
+    <el-input v-model="input" placeholder="请输入内容"></el-input>
+
   </div>
 </template>
 
@@ -47,7 +51,8 @@ export default {
             date: '2016-05-03',
             name: '王小虎',
             address: '上海市普陀区金沙江路 1516 弄'
-          }]
+          }],
+          input: '',
         }
       }
 }
